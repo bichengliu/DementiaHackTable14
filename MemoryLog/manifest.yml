@@ -1,0 +1,13 @@
+applications:
+- path: .
+  memory: 128M
+  instances: 1
+  domain: mybluemix.net
+  name: MemoryLog
+  host: MemoryLog
+  disk_quota: 1024M
+  services:
+  - Speech to Text-dn
+  - Tone Analyzer-zk
+  - AlchemyAPI-p0
+  buildpack: python_buildpack

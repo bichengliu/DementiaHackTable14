@@ -1,0 +1,2 @@
+Patient,Date,analytical,overpowering,anger,disgust,bins_variance,sentiment_score,extraversion_big5,tentative,rank,conscientiousness_big5,fear,audio_link,joy,emotional_range_big5,sadness,sentiment,openness_big5,bins_mean,agreeableness_big5,word_count,confident,loudest_value
+03,20170303,0.0,0,0.048434,0.130293,0.0861941615395,-0.820757,0.373947,0.360131,0,0.000615,0.255501,https://dl.dropboxusercontent.com/u/11606397/7519583256891069.wav,0.032357,0.000452,0.649249,negative,0.315983,0.128974168243,0.278131,13,0.0,0.000380909259149
