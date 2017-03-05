@@ -1,7 +1,7 @@
 ##Python Flask app 
 Running on IBM bluemix with watson developer cloud services enabled 
 
-2 API calls are available: 
+3 API calls are available: 
 
 https://memorylog.mybluemix.net/api/analyzedata
 POST 3 JSON strings: 
@@ -17,3 +17,6 @@ Gets the completed CSV file with headers:
 3) Metric name
 4) "value"
 5) string or numeric values 
+
+https://memorylog.mybluemix.net/api/pivotdataupdate
+Gets the completed CSV file with all values. 
