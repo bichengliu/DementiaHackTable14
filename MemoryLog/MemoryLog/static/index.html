@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Python Flask Starter Application</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="static/stylesheets/style.css">
+  </head>
+
+  <body>
+    <table>
+      <tr>
+        <td style= "width:30%;">
+          <img class = "newappIcon" src="static/images/newapp-icon.png">
+        <td>
+        <td>
+            <input id="filename" placeholder="Enter Filename">
+            <input id="patient_id" placeholder="Enter Patient ID">
+            <input id="date" placeholder="Enter Date">
+            <button id="AnalyzeData"> Analyze Data </button>
+        </td>
+        <td> 
+          <span id ="results"> </span>
+        </td>
+    </table>
+    
+    <script src= "https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')
+
+        document.getElementById("AnalyzeData").addEventListener('click', function(){
+                    $.ajax({
+                        url: '/api/analyzedata',
+                        data: JSON.stringify({'filename': document.getElementById("filename").value, 'patient_id':document.getElementById("patient_id").value, 'date':document.getElementById("date").value}),
+                        type: 'POST',
+                        contentType: 'application/json;charset=UTF-8',
+                        processData: false, 
+                        success: function(response) {
+                            console.log(response);
+                        },
+                        error: function(error) {
+                            console.log(error);
+                        }
+                    });;
+                })
+    </script>
+  </body>
+
+
+</html>
