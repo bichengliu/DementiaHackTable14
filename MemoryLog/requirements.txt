@@ -1,5 +1,1 @@
-Flask==0.10.1
-watson-developer-cloud==0.25.1
-urllib3==1.20
-scipy==0.18.1
-numpy==1.12.0
+
